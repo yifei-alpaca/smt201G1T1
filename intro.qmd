@@ -1,0 +1,28 @@
+---
+title: "Introduction"
+editor: visual
+---
+
+## Overview
+
+ABCDEFG
+
+## Project Task
+
+The project tasks are as follows:
+
+-   A
+
+-   B
+
+-   C
+
+## Data Preparation
+
+The following data sets will be use:
+
+-   1
+
+-   2
+
+-   3

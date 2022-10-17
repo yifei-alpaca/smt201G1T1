@@ -12,5 +12,26 @@
     "title": "About",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "intro",
+    "section": "",
+    "text": "ABCDEFG"
+  },
+  {
+    "objectID": "intro.html#project-task",
+    "href": "intro.html#project-task",
+    "title": "intro",
+    "section": "Project Task",
+    "text": "Project Task\nThe project tasks are as follows:\n\nA\nB\nC"
+  },
+  {
+    "objectID": "intro.html#data-preparation",
+    "href": "intro.html#data-preparation",
+    "title": "intro",
+    "section": "Data Preparation",
+    "text": "Data Preparation\nThe following data sets will be use:\n\n1\n2\n3"
   }
 ]
