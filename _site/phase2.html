@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Sherry">
+    <title>Geo Girls</title>
+
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+	<link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="./overview.html" class="nav-link">Overview</a></li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button
+                        class=" btn nav-link dropdown-toggle px-5"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        Methodology
+                    </button>
+                    <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                    >
+                        <li>
+                            <a class="dropdown-item" href="./phase1.html"
+                                >Phase 1 - Data Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="./phase2.html"
+                                >Phase 2 - Data Processing</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="./phase3.html"
+                                >Phase 3 - Data Reporting</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item"><a href="./index.html" class="nav-link"><img src="assets/imgs/placeholder.svg" ><br></a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Analysis & Findings</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Poster</a></li>
+        </ul>
+    </nav><!-- end of page navbar -->
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>  
+
+	<div class="col-md-10 col-lg-8 m-auto">
+		<br>
+		<br>
+		<h6 class="title mb-4 mt-5 pt-5">Phase 1 - Data Processing</h6>
+		<p class="mb-5">
+			MMQGIS plugin was used to generate the points for primary and secondary schools from the csv file obtained from data.gov.sg. The population data was then cleaned and joined using QGIS DB Manager.
+            <br>
+            <br>
+            The livability of a location depends on various factors that are crucial to an individual’s growth, physical and mental wellbeing. Such factors include ease of connectivity, availability of education, healthcare, and food. Therefore, eleven factors were chosen as points of interest to be analyzed and they are listed in the table below. Each factor was clipped using the 600-meter Service Area from the MRT Station Exits.
+		</p>
+			<table class="table text-center mt-2">
+				<thead>
+				  <tr>
+					<th scope="col"><p><b>Factors</b></p></th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row"><p>Taxi 🚕</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>SuperMarkets 🛒 🏪</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>Secondary School 👩 🧑 🏫</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>Primary School 🧒 👧 🏫</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>PreSchool 👶 🏫</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>ElderCare 👵</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>BusStop  🚏</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>Bank 🏦</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>Food 🍛 🥐</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>Mall 🏬</p></th>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>Clinic 🏥</p></th>
+				  </tr>
+				  
+				</tbody>
+			  </table>
+                <div class="text-center">
+
+                    <img src = './assets/imgs/report/Picture4.png'  align="center">
+
+                </div>
+
+                <p>
+                   <br>
+				After clipping all the individual factors, save them in a GeoPackage  “file name” with the correct projection of “EPSG:3414 – SVY21 / Singapore TM”.
+			   </p>
+
+		    <h6 class="title mb-4 mt-3 pt-3">Creating Exits/Entry point</h6>
+            <p>
+                Since the newly TEL stage 4 does not have an exit/entry point layer, manual creation is required with reference to Land Transport Authority’s (LTA) design plan as shown in the figures below:
+            </p>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/TE22A--Founders-Memorial.png'  align="center">
+            </div>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/TE23--Tanjong-Rhu.png'  align="center">
+            </div>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/TE24--Katong-Park.png'  align="center">
+            </div>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/TE25--Tanjong-Katong.png'  align="center">
+            </div>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/TE26--Marine-Parade.png'  align="center">
+            </div>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/TE27--Marine-Terrace.png'  align="center">
+            </div>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/TE28--Siglap.png'  align="center">
+            </div>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/TE29--Bayshore.png'  align="center">
+            </div>
+            <br></br>
+
+            <p>
+                One approach is to create a “New Temporary Scratch Layer”. Firstly, on the menu bar, click on Layer >>> Create Layer >>> New Temporary Scratch Layer. 
+            </p>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/Picture5.png'  align="center">
+            </div>
+            <p class="mt-3">
+                A new pop-up screen will be shown. Rename the layer name according to the naming convention of “station name_ Station_exits”. Then, change the geometry type to Points as well as the projection system as shown below. Leave the rest as default and click on OK.
+            </p>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/Picture6.png'  align="center">
+            </div>
+            <p>
+                A temporary new layer will be added in the Layers tab. On the menu bar select Toggle edit button and select Add Points.
+            </p>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/Picture7.png'  align="center">
+            </div>
+            <p>
+                Navigate to the FM station and click on the station and a point should be created as shown below. This approach would allow us to create the station exits/entry for all 8 stations.
+            </p>
+            <div class="text-center mt-3">
+                <img src = './assets/imgs/report/Picture8.png'  align="center">
+            </div>
+
+		    <h6 class="title mb-4 mt-3 pt-3">Shortest Distance</h6>
+            <p>
+                Analysed the amenities and points of interest within 10-minutes’ walk from each of the stations for Stage 4. With the extracted walking path layer as mentioned above, network analysis of the Shortest Path (point to layer) has been used to calculate the shortest distance for the 8 station’s exits/entry points. 
+            </p>
+            <div class="text-left mt-3">
+                <img src = './assets/imgs/report/Picture9.png' width="540px" align="left">
+                <img src = './assets/imgs/report/Picture10.png' width="500px" align="right">
+            </div>
+            
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <!-- <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script> -->
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+    <!-- Dorang js -->
+    <script src="assets/js/nightandlight.js"></script>
+
+</body>
+</html>
