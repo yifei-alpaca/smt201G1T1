@@ -76,8 +76,165 @@
 		<p class="mb-5">
 			Singapore has undergone a Mass Rapid Transit system expansion, with the addition of the Thomson East Cost Line (TEL). There are a total of 32 stations in the Thomson-East Coast Line (TEL) that runs from North down to the central district and through the Eastern region. TEL Stage 3 will open for passenger service from 13 November 2022 onwards. With the successful opening of TEL Stage 3, works on stage 4 will be continued as planned.  TEL Stage 4 consists of 8 stations that run along the East Coast which is expected to start operations in 2024. With the new Thomson East Coast Line arriving on our shores very soon, commuters can expect massive time savings on their commute to central business district. This study is conducted to evaluate socioeconomics and/or demographic attributes of Thomson East Coast Line (Phase 4) based on the catchment area of 600 meters from the station’s exits. 11 factors were used to evaluate the attributes of the MRT stations, namely, Preschools, Secondary Schools, Primary Schools, Food Establishments, Clinics/Healthcare Facilities, Malls, Supermarkets, Eldercare, Bus Stops, Banks and Taxi Stands.
 		</p>
+		<div> 
+			<h6 class="title mb-4 mt-2 pt-2">Introduction</h6>
+			<p>
+				The Thomson East Coast Line (Phase 4) consists of eight (8) MRT stations, namely, Founder’s Memorial, Tanjong Rhu, Katong Park, Tanjong Katong, Marine Parade, Marine Terrace, Siglap and Bayshore. The acronyms used in this study are shown in table below: 
+			</p>
+			<table class="table text-center mt-2">
+				<thead>
+				  <tr>
+					<th scope="col"><p><b>MRT Station Name</b></p></th>
+					<th scope="col"><p><b>Acronym
+					</b></p></th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row"><p>Founder’s Memorial</p></th>
+					<td><p>FM_Stn</p></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><p>Tanjong Rhu</p></th>
+					<td><p>TJR_Stn</p></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><p>Katong Park</p></th>
+					<td><p>KTP_Stn</p></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><p>Tanjong Katong</p></th>
+					<td><p>TJK_Stn</p></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><p>Marine Parade</p></th>
+					<td><p>MP_Stn</p></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><p>Marine Terrace</p></th>
+					<td><p>MT_Stn</p></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><p>Siglap</p></th>
+					<td><p>SL_Stn</p></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><p>Bayshore</p></th>
+					<td><p>BS_Stn</p></td>
+				  </tr>
+				</tbody>
+			  </table>
+			  <div class="text-center">
 
+				  <img src = './assets/imgs/report/Picture3.png' width="800px" align="center">
+			  </div>
+
+			   <p>
+				The image above shows that the MRT stations are located at the southeast of Singapore. The area surrounding Founder’s Memorial MRT mainly consists of Gardens by the Bay and Marina Bay Golf Course. Since the Marina Bay Golf Course will be repurposed to meet other needs of Singaporeans by the end of year 2024, the plot is currently marked as a reserved site on Master Plan 2019. Therefore, this report will also consist of a suggested land use plan for the redevelopment of the land area currently taken up by Marina Bay Golf Course.
+			   </p>
+
+
+		</div>
+
+
+
+
+		<h6 class="title mb-4 mt-2 pt-2">Project Objective</h6>
+		<p class="mb-5"> 
+			The analysis of our transportation system is important, as it can help uncover insights for improvements or deeper understanding of the MRT stations. Therefore, this study aims to achieve the following objectives: 
+			<br>
+			<br>
+			a) To investigate the traits of each MRT station
+			<br> 
+			b) To analyze the land use and population of each MRT station (within 600 meters)
+			<br> 
+			c) To determine the shortest path for selected bus stops to two of the MRT stations with the largest population
+		</p>
+		<h6 class="title mb-4 mt-2 pt-2">Scope of work</h6>
+		<p> 
+			The catchment area is divided into an inner and an outer ring. The inner ring catchment area is defined by the 600 meters walking distance from the station exits/entries, it uses the service area approach. The outer ring catchment area is a Circular Buffer 600 meters flying distance from the station.  It uses the Euclidean distance or Circular Approach which does not take account of natural barriers like trees, buildings, lake, etc. Despites its drawbacks, it is useful for the overall analyses of the catchment areas.
+		</p>
+		<div class="row">
+			<div class="col">
+
+				<img src = './assets/imgs/report/buffer.jpg' width="1000px" align="left">
+
+			</div>
+			<div class="col">
+
+				<img src = './assets/imgs/report/Picture2.jpg' width="150px" align="left">
+			</div>
+		</div>
+
+
+		<div class="mt-5" style="margin-top: 100px;">
+			<p >The table below shows the difference between the catchment areas of the Circular Buffer Approach, the Service Area Approach, and the amount of area analyzed within the MRT stations</p>
+		<table class="table text-center mt-2">
+			<thead>
+			  <tr>
+				<th scope="col"><p><b>MRT Station Name</b></p></th>
+				<th scope="col"><p><b>Inner Buffer Area m^2 (600m service area)
+				</b></p></th>
+				<th scope="col"><p><b>Outer Buffer Area m^2 (600 Circular buffer)</b></p></th>
+
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<th scope="row"><p>Founder’s Memorial</p></th>
+				<td><p>339,357</p></td>
+				<td><p>1,418,900</p></td>
+			  </tr>
+			  <tr>
+				<th scope="row"><p>Tanjong Rhu</p></th>
+				<td><p>532,323</p></td>
+				<td><p>1,430,007</p></td>
+			  </tr>
+			  <tr>
+				<th scope="row"><p>Katong Park</p></th>
+				<td><p>484,039</p></td>
+				<td><p>1,474,761</p></td>
+			  </tr>
+			  <tr>
+				<th scope="row"><p>Tanjong Katong</p></th>
+				<td><p>405,859</p></td>
+				<td><p>1,364,195</p></td>
+			  </tr>
+			  <tr>
+				<th scope="row"><p>Marine Parade</p></th>
+				<td><p>762,696</p></td>
+				<td><p>1,580,343</p></td>
+			  </tr>
+			  <tr>
+				<th scope="row"><p>Marine Terrace</p></th>
+				<td><p>953,927</p></td>
+				<td><p>1,811,046</p></td>
+			  </tr>
+			  <tr>
+				<th scope="row"><p>Siglap</p></th>
+				<td><p>665,370 </p></td>
+				<td><p>1,708,404</p></td>
+			  </tr>
+			  <tr>
+				<th scope="row"><p>Bayshore</p></th>
+				<td><p>610,262</p></td>
+				<td><p>1,770,345</p></td>
+			  </tr>
+
+			</tbody>
+		  </table>
+		</div>
+		<h6 class="title mb-3 mt-4 pt-5">Project Timeline</h6>
+		<div class="mb-5 text-center">
+
+			 <img src = './assets/imgs/report/GIS Gantt Chart.png'  align="center">
+			 <br>
+			 <br>
+			 <br>
+			 <br>
+		</div>
 	</div>
+	
 
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>

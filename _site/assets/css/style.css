@@ -11591,7 +11591,7 @@ a:hover {
 /* page navbar */
 .page-navbar {
 	z-index: 999;
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	top: 0;
 	display: -webkit-box;
@@ -12080,6 +12080,10 @@ body.light-theme .title {
 
 body.light-theme p {
 	color: #000;
+}
+
+body.light-theme th td {
+	color: #fff;
 }
 
 body.light-theme nav.page-navbar .nav-link {
