@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Sherry">
+    <title>Geo Girls</title>
+
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+	<link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="./overview.html" class="nav-link">Overview</a></li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button
+                        class=" btn nav-link dropdown-toggle px-5"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        Methodology
+                    </button>
+                    <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                    >
+                        <li>
+                            <a class="dropdown-item" href="./phase1.html"
+                                >Phase 1 - Data Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="./phase2.html"
+                                >Phase 2 - Data Processing</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="./phase3.html"
+                                >Phase 3 - Data Reporting</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item"><a href="./index.html" class="nav-link"><img src="assets/imgs/placeholder.svg" ><br></a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Analysis & Findings</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Poster</a></li>
+        </ul>
+    </nav><!-- end of page navbar -->
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>  
+
+	<div class="col-md-10 col-lg-8 m-auto">
+		<br>
+		<br>
+		<h6 class="title mb-4 mt-5 pt-5">Phase 1 - Data Collection</h6>
+		<p class="mb-5">
+			The selected area of study or catchment area was first defined in order to have a focused investigation around the 8 stations of Thomson East Coast Line (Phase 4). For the process of deciding on the scope of study area, a study amongst three average Singaporeans with different backgrounds was conducted. The conclusion is that the average walking distance covered by a Singaporean in 5 minutes is around 300 meters. The findings are in the table shown below.
+		</p>
+			<table class="table text-center mt-2">
+				<thead>
+				  <tr>
+					<th scope="col"><p><b>Name</b></p></th>
+					<th scope="col"><p><b>Distance Walked (Meters)
+					</b></p></th>
+                    <th scope="col"><p><b>Time Taken (minutes)
+					</b></p></th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row"><p>Eun Jin</p></th>
+					<td><p>300</p></td>
+					<td><p>5.1</p></td>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>Xin Yee</p></th>
+					<td><p>300</p></td>
+					<td><p>5.2</p></td>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>Sherry</p></th>
+					<td><p>300</p></td>
+					<td><p>4.8</p></td>
+				  </tr>
+                  <tr>
+					<th scope="row"><p>Google Map</p></th>
+					<td><p>300</p></td>
+					<td><p>4</p></td>
+				  </tr>
+				  
+				</tbody>
+			  </table>
+
+			   <p>
+				Additionally, Land Transport Authority (LTA) of Singapore has published in the 2030 master plan report that “By 2030, 8 in 10 households will live within a ten-minute walk of a train station, making getting around Singapore significantly easier”. Thus, we took 10 minutes of walk as our guide and calculated it to be 600 meters based on the walking speed concluded in table above.
+                <br>
+
+                <br>
+                To fulfill the proposed analysis, datasets were obtained from data.gov.sg and used the dataset named “Master Plan 2019 Rail Station layer” to acquire information on the Thomson East-Coast Line Phase 4 station locations. In-built OpenStreetMap layer was used to view the area surrounding the eight stations.
+                For the Service Area Approach, the roads layer from Geofabrik was used. The data was filtered by using the expression function: fclass = “unclassified”, “residential”, “living_street”, “pedestrian”, “service”, “track”, “footway”, “bridleway”, “path”, “steps”, “unknown” as only walkable paths were needed.
+			   </p>
+               <br>
+               <br>
+
+    </div>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <!-- <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script> -->
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+    <!-- Dorang js -->
+    <script src="assets/js/nightandlight.js"></script>
+
+</body>
+</html>
